@@ -21,6 +21,12 @@ pub fn run() {
   // println!("Array occupies {} bytes in total", std::mem::size_of_val(&num));
   println!("Array occupies {} bytes in total.", mem::size_of_val(&num));
 
+  // Get Slice
+  // let slice: &[i32] = &num; // whole slice
+  let slice: &[i32] = &num[0..3]; // parted
+  // for array using the debug-trait
+  println!("Slice: {:?}.", slice);  
+
   // Get single Value
   println!("Single Values: {}, {}, {}", num[0], num[1], num[2]);
 }
