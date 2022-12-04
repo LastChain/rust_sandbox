@@ -2,7 +2,6 @@
 // String = Growable, heap-allocated data structure Use when you need to modify or own string data
 
 pub fn run() {
-
     // let hello = String::from("Hello!");
     let mut hello = String::from("Hello ");
 
@@ -11,7 +10,7 @@ pub fn run() {
 
     // Push char
     hello.push('W');
-    
+
     // Push string
     hello.push_str("orld!");
 
@@ -29,7 +28,7 @@ pub fn run() {
 
     // Loop through string by whitespace
     for word in hello.split_whitespace() {
-      println!("{}", word);
+        println!("{}", word);
     }
 
     // Create string with capacity
@@ -41,7 +40,6 @@ pub fn run() {
     // Assertion testing
     assert_eq!(2, s.len());
     assert_eq!(10, s.capacity());
-
 
     // println!("{}", hello);
 }
